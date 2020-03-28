@@ -1,0 +1,22 @@
+{
+  "npmScope": "test-other-builders2",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "frontend-react": {
+      "tags": []
+    },
+    "frontend-react-e2e": {
+      "tags": [],
+      "implicitDependencies": ["frontend-react"]
+    }
+  }
+}

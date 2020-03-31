@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const getAffected = `yarn && yarn --silent nx print-affected --base=${process.env.CACHED_COMMIT_REF} --head=HEAD`;
+const getAffected = `npx nx print-affected --base=${process.env.CACHED_COMMIT_REF} --head=HEAD`;
 
 exec(getAffected, function(error, stdout, stderr) {
   process.stdout.write('hey there!');

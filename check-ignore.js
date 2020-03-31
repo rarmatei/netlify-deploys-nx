@@ -4,6 +4,7 @@
 // process.exit(0);
 
 console.log('hello...');
+process.exit(0);
 
 // exec(getAffected, function(error, stdout, stderr) {
 //   process.stdout.write('hey there!');

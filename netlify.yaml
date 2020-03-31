@@ -1,2 +1,2 @@
 build:
-  ignore: echo "hello"
+  ignore: ./run-ignore.sh

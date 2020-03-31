@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const getAffected = `yarn nx print-affected --base=${process.env.CACHED_COMMIT_REF} --head=HEAD`;
+const getAffected = `yarn --silent nx print-affected --base=${process.env.CACHED_COMMIT_REF} --head=HEAD`;
 
 exec(getAffected, function(error, stdout, stderr) {
   const changedProjects = JSON.parse(stdout).projects;

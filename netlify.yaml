@@ -1,2 +1,2 @@
 build:
-  ignore: if [[ $PROJECT_NAME == "frontend-react" ]] echo "x has the value valid"
+  ignore: if [[ $PROJECT_NAME == "frontend-react" ]]; then echo "valid"; else echo "not valid"; fi

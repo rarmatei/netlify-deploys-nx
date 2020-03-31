@@ -1,2 +1,2 @@
 build:
-  ignore: ./check-ignore.sh
+  ignore: npx nx print-affected --base=HEAD~ --head=HEAD

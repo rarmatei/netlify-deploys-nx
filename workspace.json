@@ -48,6 +48,25 @@
             }
           }
         },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/apps/frontend-react",
+            "netlifyToken": "ba506f3d5ed5a3465aafe3ede92e1935176e537e565c46d403b30a9e4357894d",
+            "siteId": "5081efc7-30f5-4cc1-823a-3bf6cb14d6f0"
+          }
+        },
+        "deploy-now": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "now --confirm"
+              }
+            ],
+            "cwd": "dist/apps/frontend-react"
+          }
+        },
         "serve": {
           "builder": "@nrwl/web:dev-server",
           "options": {

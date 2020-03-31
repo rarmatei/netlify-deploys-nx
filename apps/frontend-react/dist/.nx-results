@@ -1,0 +1,6 @@
+{
+  "command": "build",
+  "results": {
+    "frontend-react": false
+  }
+}

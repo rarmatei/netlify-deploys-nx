@@ -1,3 +1,3 @@
 [build]
   # Ignore build command if exit 0
-  ignore = 'echo "${PROJECT_NAME}"'
+  ignore = '[ "$PROJECT_NAME" == "frontend-react" ] && echo "it has the correct value!"'

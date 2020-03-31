@@ -1,5 +1,5 @@
-const exec = require('child_process').exec;
-const getAffected = `yarn --silent exec nx print-affected --base=${process.env.CACHED_COMMIT_REF} --head=HEAD`;
+// const exec = require('child_process').exec;
+// const getAffected = `yarn --silent exec nx print-affected --base=${process.env.CACHED_COMMIT_REF} --head=HEAD`;
 
 process.exit(0);
 

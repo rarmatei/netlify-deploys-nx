@@ -1,3 +1,3 @@
 #!/bin/bash
 
-if [ 1 -eq 2 ]; then echo "hello"; else echo "goodbye"; fi
+if [[ $PROJECT_NAME == 'frontend-react' ]]; then echo "hello"; else echo "goodbye"; fi∂

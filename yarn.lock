@@ -1233,7 +1233,7 @@
     require-package-name "^2.0.1"
     resolve "^1.10.0"
 
-"@nrwl/cli@9.1.4":
+"@nrwl/cli@9.1.4", "@nrwl/cli@^9.1.4":
   version "9.1.4"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-9.1.4.tgz#eb4331eac65199f7666f2a0b911da6acc212385b"
   integrity sha512-wwMO/skVuxM4CYnJUT/Y16k6+1lILRqP6/kSRz450x0up2u7gF2wp4V+vxglt8elY+FnWjnTCurPN/B6tmqN3Q==

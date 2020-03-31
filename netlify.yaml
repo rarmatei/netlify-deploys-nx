@@ -1,2 +1,2 @@
 build:
-  ignore: echo "some value... $NODE_VERSION"
+  ignore: if [ 1 -eq 2 ]; then echo "hello"; else echo "goodbye"; fi

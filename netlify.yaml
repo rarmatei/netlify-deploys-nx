@@ -1,2 +1,2 @@
 build:
-  ignore: if [[ $PROJECT_NAME == "frontend-react" ]]; then echo "valid"; else echo "not valid"; fi
+  ignore: echo "some value... ${NODE_VERSION}"

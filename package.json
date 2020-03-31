@@ -5,7 +5,8 @@
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
-    "build": "node ./check-ignore.js && nx build",
+    "preinstall": "node ./check-ignore.js",
+    "build": "nx build",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",

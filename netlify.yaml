@@ -1,2 +1,0 @@
-build:
-  ignore: yarn --silent exec nx print-affected -- --base=f5c4cfe --head=HEAD --select="projects"

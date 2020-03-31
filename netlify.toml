@@ -1,3 +1,0 @@
-[build]
-  # Ignore build command if exit 0
-  ignore = 'if [[ $PROJECT_NAME == "frontend-react" ]] echo "x has the value 'valid'"'

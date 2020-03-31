@@ -1,2 +1,2 @@
 build:
-  ignore: node ./check-ignore.js
+  ignore: echo "hello"

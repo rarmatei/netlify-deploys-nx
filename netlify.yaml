@@ -1,2 +1,2 @@
 build:
-  ignore: node ./check-ignore.js > &1
+  ignore: node ./check-ignore.js > $1 || true

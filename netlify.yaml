@@ -1,2 +1,2 @@
 build:
-  ignore: yarn install @nrwl/cli && yarn nx print-affected --base=HEAD~ --head=HEAD
+  ignore: yarn add @nrwl/cli && yarn nx print-affected --base=HEAD~ --head=HEAD

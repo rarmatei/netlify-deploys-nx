@@ -1,2 +1,2 @@
 build:
-  ignore: echo "some value... ${NODE_VERSION}"
+  ignore: echo "some value... $NODE_VERSION"

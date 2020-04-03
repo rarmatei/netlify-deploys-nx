@@ -1,16 +1,31 @@
-const exec = require('child_process').exec;
-const getAffected = `yarn --silent exec nx print-affected -- --base=${process.env.CACHED_COMMIT_REF} --head=HEAD`;
-const currentProject = process.env.PROJECT_NAME;
-
-if (!currentProject) {
+if (!process.env.NETLIFY) {
   process.exit(0);
 }
 
-exec(getAffected, function(error, stdout, stderr) {
-  const changedProjects = JSON.parse(stdout).projects;
+const currentProject = process.env.PROJECT_NAME;
+const lastDeployedCommit = process.env.CACHED_COMMIT_REF;
+const latestCommit = 'HEAD';
+const projectHasChanged = projectChanged(
+  currentProject,
+  lastDeployedCommit,
+  latestCommit
+);
+
+if (projectHasChanged) {
+  process.exit(0);
+} else {
+  //stop the build if process hasn't changed
+  process.exit(1);
+}
+
+function projectChanged(projectName, fromHash, toHash) {
+  const execSync = require('child_process').execSync;
+  const getAffected = `yarn --silent exec nx print-affected -- --base=${fromHash} --head=${toHash}`;
+  const output = execSync(getAffected).toString();
+  const changedProjects = JSON.parse(output).projects;
   if (changedProjects.find(proj => proj === currentProject)) {
-    process.exit(0);
+    return true;
   } else {
-    process.exit(1);
+    return false;
   }
-});
+}

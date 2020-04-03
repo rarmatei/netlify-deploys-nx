@@ -48,7 +48,7 @@
             }
           }
         },
-        "deploy": {
+        "deploy-netlify": {
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
             "outputPath": "dist/apps/frontend-react",

@@ -18,7 +18,7 @@ module.exports = {
     });
     const projectGraph = createProjectGraph();
     const affectedGraph = filterAffected(projectGraph, calculatedFileChanges);
-    if (!affectedGraph.nodes[process.env.PROJECT_ID]) {
+    if (!affectedGraph.nodes[process.env.PROJECT_NAME]) {
       utils.build.cancelBuild(
         'Build was cancelled because Project was not affected'
       );

@@ -7,7 +7,7 @@ const {
 const { calculateFileChanges } = require('@nrwl/workspace/src/core/file-utils');
 const { parseFiles } = require('@nrwl/workspace/src/command-line/shared');
 module.exports = {
-  onPreBuild: ({ utils }) => {
+  onInit: ({ utils }) => {
     const files = parseFiles({
       base: process.env.CACHED_COMMIT_REF,
       head: 'HEAD'

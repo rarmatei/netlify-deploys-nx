@@ -15,7 +15,7 @@ export const App = () => {
     <div className="app">
       <header className="flex">
         <Logo width="75" height="75" />
-        <h1>Welcome to frontend-react - from the Nrwl meeting222</h1>
+        <h1>Welcome to frontend-react - from the Nrwl meeting33333</h1>
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
